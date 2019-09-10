@@ -9,11 +9,13 @@ sudo apt-get install ctags cscope
 #./install.sh [plugin path] 
 unzip taglist_45.zip
 unzip winmanager.zip
-
-cp cscope_maps.vim plugin/
 cp -a plugin/* $INSTALLDIR/plugin/
 cp -a doc/* $INSTALLDIR/doc/
+
+cp cscope_maps.vim plugin/
 cp -a colors $INSTALLDIR/
+cp -a autoload $INSTALLDIR/
+cp -a hundle $INSTALLDIR/
 
 cp vimrc ~/.vimrc
 cp vimindex /usr/local/bin/

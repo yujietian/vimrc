@@ -25,11 +25,18 @@ set smartindent
 set softtabstop=4 
 set statusline=%F%m%r,\ %Y,\ %{&fileformat}\ \ \ ASCII=\%b,HEX=\0x\%B\ \ \ %l,%c%V\ \ %p%% 
 set tabstop=4 
-colorscheme desert 
 "set nocscopeverbose 
-syntax enable 
+
+"https://github.com/tpope/vim-pathogen.git
+execute pathogen#infect()
 syntax on 
-filetype plugin indent on 
+filetype plugin indent on
+
+"
+syntax enable 
+set background=dark
+colorscheme solarized
+
 set completeopt=longest,menu 
  
 "hi Cursorline ctermbg=Blue guibg=#3CF60B 

@@ -15,7 +15,7 @@ cp -a doc/* $INSTALLDIR/doc/
 cp cscope_maps.vim plugin/
 cp -a colors $INSTALLDIR/
 cp -a autoload $INSTALLDIR/
-cp -a hundle $INSTALLDIR/
+cp -a bundle $INSTALLDIR/
 
 cp vimrc ~/.vimrc
 cp vimindex /usr/local/bin/

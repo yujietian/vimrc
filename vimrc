@@ -15,7 +15,7 @@ set laststatus=2
 set nobackup 
 set nocompatible 
 set number 
-"set paste 
+set paste 
 set ruler 
 set shiftwidth=4 
 set showcmd 
@@ -25,7 +25,7 @@ set smartindent
 set softtabstop=4 
 set statusline=%F%m%r,\ %Y,\ %{&fileformat}\ \ \ ASCII=\%b,HEX=\0x\%B\ \ \ %l,%c%V\ \ %p%% 
 set tabstop=4 
-"set nocscopeverbose 
+set nocscopeverbose 
 
 "https://github.com/tpope/vim-pathogen.git
 execute pathogen#infect()
@@ -35,7 +35,7 @@ filetype plugin indent on
 "
 syntax enable 
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 set completeopt=longest,menu 
  

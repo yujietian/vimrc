@@ -1,10 +1,13 @@
 #!/bin/sh
 
-INSTALLDIR=/usr/share/vim/$(ls -l /usr/share/vim/ |grep ^d | awk '{print $9}' |grep vim)
+INSTALLDIR=/usr/share/vim/$(ls -l /usr/share/vim/ | grep ^d | awk '{print $9}' | grep vim | head -1)
 #echo $INSTALLDIR
 
 #install ctags cscope tool
-sudo apt-get install ctags cscope
+install=$(sudo apt-get install ctags cscope)
+if [ "$install" == "" ]; then
+  sudo yum install ctags cscope
+fi
 
 #./install.sh [plugin path] 
 unzip taglist_45.zip
